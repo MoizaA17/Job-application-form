@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Inter", sans-serif;;
+}
+
+.form-section{
+    overflow: auto;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg, #16222A , #516395 , #3A6073);
+    padding: 4.8rem 2rem 2rem 2rem;
+}
+
+form{
+    margin: auto;
+    border: 2px solid white;
+    max-height: 1061px;
+    max-width: 900px;
+    padding: 2rem;
+    box-shadow: 4px 12px 20px white;
+}
+
+#job-head{
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 2rem;
+}
+
+#job-head:hover{
+    text-decoration: underline 2px white; 
+    cursor: pointer;
+}
+
+form>div{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 7rem;
+}
+
+input{
+    height: 2rem;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-top: .4rem;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    color: #16222A;
+}
+
+select{
+    height: 2rem;
+    color: #16222A;
+    border-radius: .3rem;
+}
+
+.job-role{
+    gap: .4rem;
+}
+
+.job-role-list>option{
+    font-weight: 500;
+    color: #16222A;
+}
+
+.cv-upload input{
+    color: white;
+   
+}
+
+
+@media (min-width: 1200px){
+    .form-section{
+        max-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        padding: 1rem 1rem 1rem 3rem;
+    }
+
+    #job-head{
+        font-size: 3rem
+    }
+
+    form>div
+        {
+        font-size: 1.4rem;
+    }
+
+    input{
+        height: 2.7rem;
+        padding: .8rem;
+    }
+
+    select{
+        height: 2.7rem;
+    }
+
+}
+
+@media (min-width:560px) and (max-width: 889px) {
+    .form-section{
+       height: 100vh;
+        width: 100%;
+        padding: 2rem 2rem 2rem 2rem;
+        overflow: hidden;
+    }
+
+    form>div{
+        margin: 0;
+        padding: .5rem;
+        justify-content: center;
+    }
+}
+
+@media (min-width:320px) and (max-width:436px){
+    .form-section{
+        height: 100%;
+        width: 100%;
+        padding: .7rem;
+        overflow: auto;
+    }
+
+ form{
+     max-height: 100%;
+     max-width: 100%;
+    }
+
+    #job-head{
+     padding-bottom: .3rem;
+    }
+
+    form>div{
+        padding-bottom: .8rem; 
+        margin: 0px;
+        font-size: .9rem
+    }
+
+    input{
+        height: 1.5rem;
+        padding: .3rem;
+        font-size: .7rem;
+        border-radius: .3rem;
+    }
+}
+
+@media (min-width:437px) and (max-width:559px){
+    .form-section{
+        height: 100vh;
+        width: 100%;
+        padding: 1rem;
+        overflow: auto;
+    }
+    form{
+        max-height: 100%;
+        max-width: 100%;
+       }
+   
+       #job-head{
+        padding-bottom: .3rem;
+       }
+   
+       form>div{
+           padding-bottom: .8rem; 
+           margin: 0px;
+           font-size: .9rem
+       }
+   
+       input{
+           height: 1.5rem;
+           padding: .3rem;
+           font-size: .7rem;
+           border-radius: .3rem;
+       }
+}
+
+
+
